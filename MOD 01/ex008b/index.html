@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Codigo-fonte/Pré-formatação</h2>
+    <p>
+        O comando <code>document.getElementById(teste)</code> é escrito em linguagem JavaScript. Usamos a tag "code" para deixar o código monoespaçado facilitando a sua leitura.
+    </p>
+    <pre>
+        <code>
+    num=int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número{num} é PAR')
+    else:
+        print(f'O número{num} é IMPAR')
+    print('FIM DO PROGRAMA')
+        </code>
+    </pre>
+    <p>
+        A tag "pre" mantém os espaçamentos e quebras de linha utilizados no texto.
+    </p>
+    <h2>Citações Simples</h2>
+    <p>
+        Cmo dizia o pai de um amigo: <q>o computador é um burro muito rápido.</q>
+        <br>Poderia usar a "aspas" porém é mais recomendado usar a tag "q" para indicar que é uma citação.
+    </p>
+    <h2>Citações Completas</h2>
+    <p>
+        Segundo o NOME DO AUTOR, no seu livro NOME DO LIVRO:
+    </p>
+        <blockquote cite="colar o link da referência">
+            A citação tirada do livro ficará aqui e aparecerá com recuo no texto, indicando que é uma citação, para isso usamos a tag 'blockquote'
+        </blockquote>
+    <h2>Abreviações</h2>
+    <p>
+        Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!! 
+    </p>
+    <p>
+        Usando a tag 'abbr' e declarando sua definição no 'title', quando passar o mouse na sigla, aparecerá seu significado.
+    </p>
+
+</body>
+</html>

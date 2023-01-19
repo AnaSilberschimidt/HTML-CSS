@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <P>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.
+    </P>
+    <p>
+        A tag "picture" permite que adicione várias source, ou seja mais de uma fonte para a imagem.
+    </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="img/P.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/M.png" type="image/png">
+        <img src="img/G.png" alt="Imagem flexível">
+    </picture>
+        <!--dessa maneira as imagens vão mudando conforme o tamanho da tela do usuário-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midias/Your Love - Yung Logos.mp3" type="audio/mpeg">
+        <source src="midias/Your Love - Yung Logos.ogg" type="audio/ogg">
+        <source src="midias/Your Love - Yung Logos.wav" type="audio/wav"> 
+        <!--Dessa maneira o áudio terá formatos diferentes mais comuns na maioria dos navegadores, 
+        porém, o último .wav é o mais pesado!-->
+    </audio>
+    <p>
+        Infelizmente seu navegador não consegue reproduzir áudio.
+        <a href="midias/Your Love - Yung Logos.mp3">
+        Clique aqui para baixar o arquivo MP3.</a>
+    </p>
+</body>
+</html>
